@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cathy\\source\\repos\\Lab 1\\Lab 1\\Lab 1.csproj": {}
+    "D:\\Descargas\\E2Lab1-master\\E2Lab1-master\\Lab 1\\Lab 1\\Lab 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cathy\\source\\repos\\Lab 1\\Lab 1\\Lab 1.csproj": {
+    "D:\\Descargas\\E2Lab1-master\\E2Lab1-master\\Lab 1\\Lab 1\\Lab 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cathy\\source\\repos\\Lab 1\\Lab 1\\Lab 1.csproj",
+        "projectUniqueName": "D:\\Descargas\\E2Lab1-master\\E2Lab1-master\\Lab 1\\Lab 1\\Lab 1.csproj",
         "projectName": "Lab 1",
-        "projectPath": "C:\\Users\\Cathy\\source\\repos\\Lab 1\\Lab 1\\Lab 1.csproj",
-        "packagesPath": "C:\\Users\\Cathy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cathy\\source\\repos\\Lab 1\\Lab 1\\obj\\",
+        "projectPath": "D:\\Descargas\\E2Lab1-master\\E2Lab1-master\\Lab 1\\Lab 1\\Lab 1.csproj",
+        "packagesPath": "C:\\Users\\Zer0\\.nuget\\packages\\",
+        "outputPath": "D:\\Descargas\\E2Lab1-master\\E2Lab1-master\\Lab 1\\Lab 1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Cathy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "D:\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

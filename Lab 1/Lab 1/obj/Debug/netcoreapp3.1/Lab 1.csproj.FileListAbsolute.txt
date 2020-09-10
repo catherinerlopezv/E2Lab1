@@ -11,3 +11,16 @@ C:\Users\Cathy\source\repos\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.pdb
 C:\Users\Cathy\source\repos\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.dll
 C:\Users\Cathy\source\repos\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.pdb
 C:\Users\Cathy\source\repos\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.genruntimeconfig.cache
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.exe
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.deps.json
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.runtimeconfig.json
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.runtimeconfig.dev.json
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.dll
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\bin\Debug\netcoreapp3.1\Lab 1.pdb
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.csprojAssemblyReference.cache
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.AssemblyInfoInputs.cache
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.AssemblyInfo.cs
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.csproj.CoreCompileInputs.cache
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.dll
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.pdb
+D:\Descargas\E2Lab1-master\E2Lab1-master\Lab 1\Lab 1\obj\Debug\netcoreapp3.1\Lab 1.genruntimeconfig.cache

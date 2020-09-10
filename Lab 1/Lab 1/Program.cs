@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-
+using System.Text.RegularExpressions;
+using System.Security.Cryptography;
 
 namespace Lab_1
 {
@@ -10,68 +11,94 @@ namespace Lab_1
     {
         public struct pelicula
         {
-            public string nombre;
-            public int anio;
+         
             public string director;
-            public int estrellas;
+            public string imdbRating;
             public string genero;
+            public string anio;
+            public string rottenTomatoesRating;
+            public string nombre;
+
 
             public override string ToString()
             {
-                return "{" + nombre + ", " + anio + ", " + director + ", " + estrellas + ", " + genero + "}";
+                return "{" + director + ", " + imdbRating + ", " + genero + ", " + anio + ", " + rottenTomatoesRating+ ", " + nombre+ "}";
             }
         }
 
         static void Main(string[] args)
         {
            
-            string k;
-            object v;
             Console.WriteLine("creando el arbol");
             tree T = new tree();
             Console.WriteLine("agregando datos");
             pelicula peli;
-            peli.nombre = "El señor de los anillos";
-            peli.anio = 2000;
-            peli.director = "no se";
-            peli.estrellas = 5;
-            peli.genero = "fantasia";
-            T.put("z", 1); T.checkTree();
-            T.put("y", 2); T.checkTree();
-            T.put("x", 3); T.checkTree();
-            T.put("w", 4); T.checkTree();
-            T.put("v", 5); T.checkTree();
-            T.put("u", 6); T.checkTree();
-            T.put("t", 7); T.checkTree();
-            T.put("s", 8); T.checkTree();
 
-            T.put("r", 9); T.checkTree();
-            T.put("q", 10); T.checkTree();
-            T.put("p", 11); T.checkTree();
+            Random rnd = new Random();
 
-            T.put("o", 12); T.checkTree();
-            T.put("n", 13); T.checkTree();
-            T.put("m", 14); T.checkTree();
-            T.put("l", 15); T.checkTree();
-            T.put("k", 16); T.checkTree();
-            T.put("j", 17); T.checkTree();
-            T.put("i", 18); T.checkTree();
-            T.put("h", 18); T.checkTree();
-            T.put("g", 19); T.checkTree();
-            T.put("f", 20); T.checkTree();
-            T.put("e", peli); T.checkTree();
-            T.put("d", 22); T.checkTree();
-            T.put("c", 23); T.checkTree();
-            T.put("b", 24); T.checkTree();
-            T.put("a", 25); T.checkTree();
+            String ubicacion = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\..\..\..\test1.json";
+            string[] lineas = File.ReadAllLines(ubicacion);
+            var tokens =new Regex(":( \"(.*?)\"| ([\\w]+|[\\d]|\\.)+)");
+            var tokens2 = new Regex("(\")([\\w]|[\\d])");
 
+            //Console.WriteLine(match2.Groups[1]);
+
+            for (int i = 0; i < lineas.Length; i++)
+            {
+                Match matchPelicula = tokens.Match(lineas[i]);
+                // Console.WriteLine(lineas[i]);
+                if (lineas[i].Contains("director"))
+                {
+                    peli.director = matchPelicula.Groups[1].Value;
+                    matchPelicula = tokens.Match(lineas[i+1]);
+                    peli.imdbRating =   matchPelicula.Groups[1].Value;
+                    matchPelicula = tokens.Match(lineas[i+2]);
+                    peli.genero = matchPelicula.Groups[1].Value;
+                    matchPelicula = tokens.Match(lineas[i+3]);
+                    peli.anio =   matchPelicula.Groups[1].Value;
+                    matchPelicula = tokens.Match(lineas[i+4]);
+                    peli.rottenTomatoesRating = matchPelicula.Groups[1].Value;
+                    matchPelicula = tokens.Match(lineas[i+5]);
+                    peli.nombre = matchPelicula.Groups[1].Value;
+
+                    Match matchTitulo = tokens2.Match(peli.nombre);
+                 
+                    T.put(matchTitulo.Groups[2].Value.ToLower(), peli);
+              
+                    i = i + 5;
+                }
+            }
             T.print = true;
 
-            T.printTree();
+             T.printTree();
 
-            Console.WriteLine("buscando valor de e ");
-            Console.WriteLine(T.get("e"));
-            Console.WriteLine("finaliza");
+            string opcion="";
+                     while(opcion!="NO")
+            {
+            A:
+                Console.Write("Buscar categoria, ingrese una letra o ingrese NO para salir: ");
+                try
+                {
+                    opcion = Console.ReadLine();
+                    Console.WriteLine(T.get(opcion));
+
+                    goto A;
+                }
+                catch
+
+                {
+                   
+                    goto A;
+                }
+
+
+
+
+            }
+
+
+          
+            
             Console.ReadLine();
         }
     }
