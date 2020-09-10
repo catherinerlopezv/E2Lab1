@@ -796,7 +796,7 @@ namespace Lab_1
 
             if (p.child[2] != null)
             {
-                padding("++", level);
+                Console.Write("|");  padding("--", level);
                 Console.WriteLine("numero hijo " + id + ":" + p.toString());
 
 
@@ -815,7 +815,7 @@ namespace Lab_1
                     printSub(p.child[1], 1, level + 1);
                 }
 
-                padding("++", level);
+                Console.Write("|"); padding("--", level);
                 Console.WriteLine("numero hijo " + id + ":" + p.toString());
 
 
