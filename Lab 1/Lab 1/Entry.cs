@@ -8,9 +8,9 @@ namespace Lab_1
     {
        
             public string key;
-            public int value;
+            public object value;
 
-            public Entry(string k, int v)
+            public Entry(string k, object v)
             {
                 key = k;
                 value = v;

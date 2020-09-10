@@ -129,7 +129,7 @@ namespace Lab_1
         /* ================================================
            put(k): insert (k,v)
            ================================================ */
-        public object put(String k, int v)
+        public object put(String k, object v)
         {
             Node p;
             Entry e;
@@ -163,7 +163,7 @@ namespace Lab_1
                ------------------------ */
             if (e != null && k.CompareTo(e.key) == 0)
             {
-                int oldValue;
+                object oldValue;
 
                 Console.Write("*** Update value of " + k + " in entry " + e.toString());
 

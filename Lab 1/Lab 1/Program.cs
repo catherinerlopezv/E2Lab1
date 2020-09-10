@@ -8,7 +8,20 @@ namespace Lab_1
 {
     class Program
     {
-       
+        public struct pelicula
+        {
+            public string nombre;
+            public int anio;
+            public string director;
+            public int estrellas;
+            public string genero;
+
+            public override string ToString()
+            {
+                return "{" + nombre + ", " + anio + ", " + director + ", " + estrellas + ", " + genero + "}";
+            }
+        }
+
         static void Main(string[] args)
         {
            
@@ -17,6 +30,12 @@ namespace Lab_1
             Console.WriteLine("creando el arbol");
             tree T = new tree();
             Console.WriteLine("agregando datos");
+            pelicula peli;
+            peli.nombre = "El señor de los anillos";
+            peli.anio = 2000;
+            peli.director = "no se";
+            peli.estrellas = 5;
+            peli.genero = "fantasia";
             T.put("z", 1); T.checkTree();
             T.put("y", 2); T.checkTree();
             T.put("x", 3); T.checkTree();
@@ -40,7 +59,7 @@ namespace Lab_1
             T.put("h", 18); T.checkTree();
             T.put("g", 19); T.checkTree();
             T.put("f", 20); T.checkTree();
-            T.put("e", 21); T.checkTree();
+            T.put("e", peli); T.checkTree();
             T.put("d", 22); T.checkTree();
             T.put("c", 23); T.checkTree();
             T.put("b", 24); T.checkTree();
