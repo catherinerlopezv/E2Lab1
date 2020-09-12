@@ -775,38 +775,84 @@ namespace APIDemo.Models
             printSub(root, 0, 0);
         }
 
-        List<object> ToListSub(Node p, List<object> Lista) {
+        List<object> ToListDerechoSub(Node p, List<object> Lista) {
             if (p != null) {
                 // Agrega a la lista los nodos que no son nulos
-                for (int i = 0; i < 3; i++) {
-                    if (p.e[i] != null) {
-                        Lista.Add(p.e[i].value);
-                    }
-                }
-            
 
               if (p.child[3] != null) {
-                Lista = ToListSub(p.child[3], Lista);
+                Lista = ToListDerechoSub(p.child[3], Lista);
+              }
+
+              if (p.e[2] != null) {
+                Lista.Add(p.e[2].value);
               }
 
               if (p.child[2] != null) {
-                Lista = ToListSub(p.child[2], Lista);
+                Lista = ToListDerechoSub(p.child[2], Lista);
               }
 
+              if (p.e[1] != null) {
+                Lista.Add(p.e[1].value);
+              }
+              
               if (p.child[1] != null) {
-                Lista = ToListSub(p.child[1], Lista);
+                Lista = ToListDerechoSub(p.child[1], Lista);
+              }
+
+              if (p.e[0] != null) {
+                Lista.Add(p.e[0].value);
               }
 
               if (p.child[0] != null) {
-                Lista = ToListSub(p.child[0], Lista);
+                Lista = ToListDerechoSub(p.child[0], Lista);
               }
             }
             return Lista;
         }
 
-        public List<object> ToList() {
+        List<object> ToListIzquierdoSub(Node p, List<object> Lista) {
+            if (p != null) {
+                // Agrega a la lista los nodos que no son nulos
+
+                if (p.child[0] != null) {
+                    Lista = ToListIzquierdoSub(p.child[0], Lista);
+                }
+
+                if (p.e[0] != null) {
+                    Lista.Add(p.e[0].value);
+                }
+
+                if (p.child[1] != null) {
+                    Lista = ToListIzquierdoSub(p.child[1], Lista);
+                }
+
+                if (p.e[1] != null) {
+                    Lista.Add(p.e[1].value);
+                }
+
+                if (p.child[2] != null) {
+                    Lista = ToListIzquierdoSub(p.child[2], Lista);
+                }
+
+                if (p.e[2] != null) {
+                    Lista.Add(p.e[2].value);
+                }
+
+                if (p.child[3] != null) {
+                    Lista = ToListIzquierdoSub(p.child[3], Lista);
+                }
+            }
+            return Lista;
+        }
+
+        public List<object> ToList(string recorrido) {
             List<object> Lista = new List<object>();
-            Lista = ToListSub(root, Lista);
+            if (recorrido != null && recorrido.ToLower() == "derecho") {
+                Lista = ToListDerechoSub(root, Lista);
+            } else {
+                Lista = ToListIzquierdoSub(root, Lista);
+            }
+            
             return Lista;
         }
 

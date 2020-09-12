@@ -8,7 +8,6 @@ C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\bin\Debug\netcorea
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\bin\Debug\netcoreapp3.1\APIDemo.runtimeconfig.dev.json
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\bin\Debug\netcoreapp3.1\APIDemo.dll
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\bin\Debug\netcoreapp3.1\APIDemo.pdb
-C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.csprojAssemblyReference.cache
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.csproj.CoreCompileInputs.cache
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.AssemblyInfoInputs.cache
@@ -19,3 +18,4 @@ C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcorea
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.dll
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.pdb
 C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.genruntimeconfig.cache
+C:\Users\desa\Documents\APIDemo-master\APIDemo-master\APIDemo\obj\Debug\netcoreapp3.1\APIDemo.csprojAssemblyReference.cache

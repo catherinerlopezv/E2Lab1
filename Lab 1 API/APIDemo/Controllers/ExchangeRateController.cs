@@ -16,10 +16,10 @@ namespace APIDemo
     {
 
         // GET: api/movie
-        [HttpGet("peli")]
-        public IEnumerable<object> Peli() {
+        [HttpGet("peli/{recorrido}")]
+        public IEnumerable<object> Peli([FromRoute] string recorrido) {
             
-            return Singleton.Instance.Peliculas.ToList();         
+            return Singleton.Instance.Peliculas.ToList(recorrido);         
         }
 
         [HttpPost]

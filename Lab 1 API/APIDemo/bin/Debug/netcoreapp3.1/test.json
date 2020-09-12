@@ -1,5 +1,58 @@
-{
-  "date": "2020-08-01T00:00:00",
-  "usd": 7.9,
-  "gtq": 1
-}
+[
+  {
+    "nombre": "El señor de los anillos 2",
+    "anio": 2001,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El señor de los anillos 3",
+    "anio": 2002,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El Hobbit",
+    "anio": 2005,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El Hobbit 2",
+    "anio": 2005,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El señor de los anillos 5",
+    "anio": 2001,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El señor de los anillos 6",
+    "anio": 2002,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El Hobbit 7",
+    "anio": 2005,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  },
+  {
+    "nombre": "El Hobbit 8",
+    "anio": 2005,
+    "director": "no se",
+    "estrellas": 5,
+    "genero": "fantasia"
+  }
+]
